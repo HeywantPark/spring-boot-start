@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemberRepo memberRepo = new MemoryMemberRepo();
+    private final MemberRepo memberRepo;
 
+    public MemberService(MemberRepo memberRepo) {
+        this.memberRepo = memberRepo;
+    }
     //회원 가입
     public Long join(Member member) {
         // 중복 회원 검증
