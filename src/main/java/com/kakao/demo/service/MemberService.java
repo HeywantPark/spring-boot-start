@@ -2,7 +2,8 @@ package com.kakao.demo.service;
 
 import com.kakao.demo.domain.Member;
 import com.kakao.demo.repository.MemberRepo;
-import com.kakao.demo.repository.MemoryMemberRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;

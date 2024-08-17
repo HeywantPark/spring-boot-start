@@ -1,8 +1,10 @@
 package com.kakao.demo.repository;
 
 import com.kakao.demo.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+
 
 public class MemoryMemberRepo implements MemberRepo{
 
